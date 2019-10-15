@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C11C482423556010009B1472 /* BulletManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C11C482023556010009B1472 /* BulletManager.m */; };
+		C11C482523556010009B1472 /* BulletView.m in Sources */ = {isa = PBXBuildFile; fileRef = C11C482223556010009B1472 /* BulletView.m */; };
 		C16052611E78C76400B16844 /* AppIcon57x57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C16052601E78C76400B16844 /* AppIcon57x57@2x.png */; };
 		C1B8934B1E77C9D500BBE03F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B8934A1E77C9D500BBE03F /* main.m */; };
 		C1B8934E1E77C9D500BBE03F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B8934D1E77C9D500BBE03F /* AppDelegate.m */; };
@@ -14,11 +16,13 @@
 		C1B893541E77C9D500BBE03F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B893521E77C9D500BBE03F /* Main.storyboard */; };
 		C1B893561E77C9D500BBE03F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B893551E77C9D500BBE03F /* Assets.xcassets */; };
 		C1B893591E77C9D500BBE03F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B893571E77C9D500BBE03F /* LaunchScreen.storyboard */; };
-		C1B893621E77CA9600BBE03F /* BulletView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B893611E77CA9600BBE03F /* BulletView.m */; };
-		C1B893651E77CAAB00BBE03F /* BulletManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B893641E77CAAB00BBE03F /* BulletManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C11C482023556010009B1472 /* BulletManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulletManager.m; sourceTree = "<group>"; };
+		C11C482123556010009B1472 /* BulletView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletView.h; sourceTree = "<group>"; };
+		C11C482223556010009B1472 /* BulletView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulletView.m; sourceTree = "<group>"; };
+		C11C482323556010009B1472 /* BulletManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletManager.h; sourceTree = "<group>"; };
 		C16052601E78C76400B16844 /* AppIcon57x57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon57x57@2x.png"; sourceTree = "<group>"; };
 		C1B893461E77C9D400BBE03F /* CommentDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommentDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B8934A1E77C9D500BBE03F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -30,10 +34,6 @@
 		C1B893551E77C9D500BBE03F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1B893581E77C9D500BBE03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1B8935A1E77C9D500BBE03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1B893601E77CA9600BBE03F /* BulletView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletView.h; sourceTree = "<group>"; };
-		C1B893611E77CA9600BBE03F /* BulletView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulletView.m; sourceTree = "<group>"; };
-		C1B893631E77CAAB00BBE03F /* BulletManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletManager.h; sourceTree = "<group>"; };
-		C1B893641E77CAAB00BBE03F /* BulletManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulletManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +47,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C11C481F23556010009B1472 /* ZZBullet */ = {
+			isa = PBXGroup;
+			children = (
+				C11C482023556010009B1472 /* BulletManager.m */,
+				C11C482123556010009B1472 /* BulletView.h */,
+				C11C482223556010009B1472 /* BulletView.m */,
+				C11C482323556010009B1472 /* BulletManager.h */,
+			);
+			path = ZZBullet;
+			sourceTree = "<group>";
+		};
 		C1B8933D1E77C9D400BBE03F = {
 			isa = PBXGroup;
 			children = (
@@ -66,15 +77,12 @@
 		C1B893481E77C9D400BBE03F /* CommentDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C11C481F23556010009B1472 /* ZZBullet */,
 				C16052601E78C76400B16844 /* AppIcon57x57@2x.png */,
 				C1B8934C1E77C9D500BBE03F /* AppDelegate.h */,
 				C1B8934D1E77C9D500BBE03F /* AppDelegate.m */,
 				C1B8934F1E77C9D500BBE03F /* ViewController.h */,
 				C1B893501E77C9D500BBE03F /* ViewController.m */,
-				C1B893601E77CA9600BBE03F /* BulletView.h */,
-				C1B893611E77CA9600BBE03F /* BulletView.m */,
-				C1B893631E77CAAB00BBE03F /* BulletManager.h */,
-				C1B893641E77CAAB00BBE03F /* BulletManager.m */,
 				C1B893521E77C9D500BBE03F /* Main.storyboard */,
 				C1B893551E77C9D500BBE03F /* Assets.xcassets */,
 				C1B893571E77C9D500BBE03F /* LaunchScreen.storyboard */,
@@ -123,7 +131,7 @@
 				TargetAttributes = {
 					C1B893451E77C9D400BBE03F = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = F5Q4X33SG8;
+						DevelopmentTeam = QRHDGXSX85;
 					};
 				};
 			};
@@ -132,6 +140,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -165,10 +174,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1B893511E77C9D500BBE03F /* ViewController.m in Sources */,
+				C11C482423556010009B1472 /* BulletManager.m in Sources */,
 				C1B8934E1E77C9D500BBE03F /* AppDelegate.m in Sources */,
-				C1B893621E77CA9600BBE03F /* BulletView.m in Sources */,
+				C11C482523556010009B1472 /* BulletView.m in Sources */,
 				C1B8934B1E77C9D500BBE03F /* main.m in Sources */,
-				C1B893651E77CAAB00BBE03F /* BulletManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QRHDGXSX85;
 				INFOPLIST_FILE = CommentDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lirenkj.CommentDemo;
@@ -289,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QRHDGXSX85;
 				INFOPLIST_FILE = CommentDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lirenkj.CommentDemo;
