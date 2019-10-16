@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ZZBullet"
-    s.version      = "0.0.2"
+    s.version      = "1.0.1"
     s.ios.deployment_target = '8.0'
     s.summary      = "A BulletView framework."
     s.homepage     = "https://github.com/814908848/BulletDemo"
